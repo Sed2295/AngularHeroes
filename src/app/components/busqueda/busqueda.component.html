@@ -1,0 +1,7 @@
+<h1>Buscador de heroes</h1>
+<hr>
+<div class="alert alert-warning" role="alert" *ngIf="vacio==true">Sin resultados!</div>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <app-heroe-tarjeta [heroe] = "heroe" [index] = "heroe.idx" *ngFor="let i = index; let heroe of heroes"></app-heroe-tarjeta>
+</div>
+

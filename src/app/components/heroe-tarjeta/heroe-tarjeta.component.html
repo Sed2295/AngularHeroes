@@ -1,0 +1,19 @@
+<div class="col">
+        <div class="card animated fadeIn fast" >
+            <!--Con [] le pedimos a angular que maneje ese atributo-->
+            <img [src]= "heroe.img" class="card-img-top" [alt]="heroe.nombre">
+            <div class="card-body">
+                <h5 class="card-title">{{ heroe.nombre }}</h5>
+                <p class="card-text">{{ heroe.bio }}</p>
+                <div class="d-grid gap-2">
+                    <!-- Forma de redireccionar con código-->
+                    <button type="button" class="btn btn-outline-info" (click)="verHeroe();" > Ver mas...</button>
+                    <!--Redireccionamiento con parametros con router-link-->
+                    <!--a [routerLink]="['/heroe',i]" class="btn btn-outline-info ">Ver mas ...</a-->
+                </div>
+            </div>
+            <div class="card-footer text-center">
+                <small class="text-muted">Aparición: {{ heroe.aparicion }}</small>
+            </div>
+        </div>
+    </div>

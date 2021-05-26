@@ -1,0 +1,10 @@
+<h1>Heroés <small>Marvel y DC</small></h1>
+<hr>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <!--*ngFor="let i = index; let heroe of heroes"-->
+    <!--Forma uno haciendo uso del evento EventEmitter-->
+    <!--Mandamos heroe hacia el hijo-->
+    <!--app-heroe-tarjeta (heroeSeleccionado)="verHeroe($event)" [heroe] = "heroe" [index] = "i" *ngFor="let i = index; let heroe of heroes"></app-heroe-tarjeta-->
+    <!-- Forma 2 haciendo uso de route-->
+    <app-heroe-tarjeta [heroe] = "heroe" [index] = "i" *ngFor="let i = index; let heroe of heroes"></app-heroe-tarjeta>
+</div>
